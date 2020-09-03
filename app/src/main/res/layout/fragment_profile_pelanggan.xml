@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:paddingBottom="24dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_fragment_pelanggan"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/txtFragmentNamaPelanggan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_fragment_pelanggan"
+            android:layout_centerHorizontal="true"
+            android:text="Viral Android"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtFragmentHpPelanggan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFragmentNamaPelanggan"
+            android:layout_centerHorizontal="true"
+            android:text="Android free tutorials and example"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtFragmentAlamatPelanggan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFragmentHpPelanggan"
+            android:layout_centerHorizontal="true"
+            android:text="Android free tutorials and example"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtFragmentAlamatPelanggan"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFragmentChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_circular_border_imageview"
+                android:text="CHAT" />
+
+            <Button
+                android:id="@+id/btnFragmentPanggil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/profile_circular_border_imageview"
+                android:text="PANGGIL" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
